@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        Job application Form.
+    </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.8.7/chosen.min.css">
+    <style type="text/css">
+    h1{color:black;text-align:start;}
+    .box-wrapper{
+    background-color:white;
+    border-right:5px solid yellow;
+    border-left:5px solid yellow;
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-right:10px;
+    padding-left:10px;
+  }
+  #box1{
+  padding: 10px; 
+  height: 50px; 
+  line-height: 10px; 
+  border:1px solid black
+  }
+  #box2 { 
+  padding: 10px; 
+  flex-grow: 3; 
+  display: flex; 
+  flex-direction: row; 
+  border: solid 1px black
+  }
+    </style>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+    <div class="box-wrapper">
+        <div id="box1">
+            <h1>
+                Job Application Form
+            </h1>
+        </div>
+        <br>
+        <div id="box2">
+            <form class="my-group">
+                <h3>Personal Information</h3>
+                First Name: <input type="text" placeholder="First" name="">
+                Middle Name: <input type="text" placeholder="Middle" name="">
+                Last Name: <input type="text" placeholder="Last" name="">
+                <br>
+                <br>
+                Select Gender:
+                <select class="chosen">
+                    <option>Female</option>
+                    <option>Male</option>
+                </select>
+                <br>
+                <br>
+                <label>City:</label>
+                <input type="text" placeholder="city name" name="">
+                <label>State:</label>
+                <input type="text" placeholder="state name" name="">
+                Country :
+                <select class="chosen">
+                    <option>India</option>
+                    <option>USA</option>
+                    <option>UK</option>
+                    <option>Australia</option>
+                    <option>Newzeland</option>
+                    <option>China</option>
+                    <option>Japan</option>
+                    <option>Srilanka</option>
+                </select>
+                <table>
+                    <tr>
+                        <td>Current Address:</td>
+                        <td>Permanant Address:</td>
+                    </tr>
+                    <tr>
+                        <td><textarea rows="10" cols="30" name="currentaddress" placeholder="Type your address..."></textarea></td>
+                        <td><textarea rows="10" cols="30" name="parmanataddress" placeholder="Type your address..."></textarea></td>
+                    </tr>
+                    <br>
+                    <br>
+                    <br>
+                
+                </table>
+                <br>
+                <p><strong>Phone:</strong></p>
+                Home Phone: <input type="number" name="phone number" size="30" maxlength="4"
+                placeholder="country code">
+                <br>
+                <br>
+                E-mail: <input type="E-mail" name="email" placeholder="email address">
+                
+                Upload cv: <input type="file" name="cv">
+                <br>
+                <hr>
+                <p><strong>Qualification:</strong></p>
+                <label for="Qualification"><b> Select qualification degree </b></label><br/>
+                <input type="checkbox" name="degree" value="Graduate" />Graduate <br />
+                <input type="checkbox" name="degree" value="Post Graduate" /> Post Graduate <br> <br>
+                <label for=“branch"><b> Select Branch</b></label><br/>
+                <select name="select">
+                    <option value="CSE">CSE</option>
+                    <option value="EC">EC</option>
+                    <option value="ME">ME</option>
+                    </select> <br/> <br/>
+
+                <hr>
+
+                <p><strong>Employed Desired?</strong></p>
+                
+                <p><strong>Position:</strong></p>
+                Manager:<input type="radio" name="position">
+                Secretary: <input type="radio" name="position">
+                Security: <input type="radio" name="position">
+                <br>
+    
+                <p><b>Are you currently employed? </b></p>
+                Yes: <input type="radio" name="employment status">
+                No: <input type="radio" name="employment status">
+                <br>
+                <b>Start Date: </b>
+                <input type="date" name="start date" placeholder="DD/MM/YYYY">
+                <hr>
+                <b>Availability:</b>
+                <br>
+                Monday: <input type="checkbox" name="day">
+                Tuesday: <input type="checkbox" name="day">
+                Wednesday: <input type="checkbox" name="day">
+                Thursday: <input type="checkbox" name="day">
+                Friday: <input type="checkbox" name="day">
+                Saturday: <input type="checkbox" name="day">
+                <hr>
+                Reset: <button type="reset" value="Reset">Reset</button>
+    
+                Submit: <input type="submit" name="submit">
+
+            </form>
+        </div>
+    </div>    
+</body>
+<script type="text/javascript">
+$(".chosen").chosen();
+</script>
